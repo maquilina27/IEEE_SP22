@@ -1,10 +1,8 @@
-
-
 int sensorPin = 2;
 volatile int sensorCount;
 
 unsigned long currentTime;
-unsigned long totalLiters;
+double totalLiters;
 
 void setup() {
   // put your setup code here, to run once:
@@ -21,7 +19,8 @@ void count(){
 void loop() {
   // put your main code here, to run repeatedly:
   currentTime = millis();
-  totalLiters; = sensorCount/450;
-  Serial.println(totalLiters);
+  totalLiters = sensorCount/(double)450;
+  Serial.println("Total Liters: " + String(totalLiters));
+  Serial.println("Sensor Count: " + String(sensorCount));
   delay(1000);
 }
