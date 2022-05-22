@@ -1,4 +1,3 @@
-<<<<<<< HEAD:Water_Sensor/Water_Sensor.ino
 //can be changed to match user specification
 #define maxLiters 0.5
 
@@ -98,4 +97,3 @@ void loop() {
   
   delay(1000);
 }
->>>>>>> 7eb03dac066d286831cfd485dc056d8b400722f0:Water_Sensor.ino
